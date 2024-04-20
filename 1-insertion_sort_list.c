@@ -1,5 +1,14 @@
 #include "sort.h"
 
+/**
+ * swap - Swaps two doubly linked list nodes in their list
+ *
+ * @a: The left node to be swapped
+ * @b: The right node to be swapped
+ *
+ * Return: NOTHING
+ */
+
 void swap(listint_t *a, listint_t *b)
 {
 	a->next = b->next;
@@ -15,6 +24,14 @@ void swap(listint_t *a, listint_t *b)
 	a->prev = b;
 	b->next = a;
 }
+
+/**
+ * insertion_sort_list - Sorts a doubly linked list using insertion sort
+ *
+ * @list: The list to be sorted
+ *
+ * Return: NOTHING
+ */
 
 void insertion_sort_list(listint_t **list)
 {
